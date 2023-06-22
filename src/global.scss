@@ -1,3 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
 body {
   background-color: black;
+  font-size: 1.6rem;
+  color: white;
 }
+
+.rifa-primary-content {
+  width: 60%;
+  margin: 0 auto;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+#rifa-header {
+  display: flex;
+  height: 5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header-description {
+  display: flex;
+  width: 50%;
+}
+
+.number-status {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#selected-numbers {
+  width: 2rem;
+  height: 1.5rem;
+  background-color: rgba(255, 0, 0, 0.9);
+
+  border-radius: 5px;
+
+  flex: none;
+}
+
+#non-selected-numbers {
+  width: 2rem;
+  height: 1.5rem;
+  background-color: #63A355;
+
+  border-radius: 5px;
+  flex: none;
+}
+
+#numbers-catalog {
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+#availables-numbers :nth-child(3){
+  background-color: rgba(255, 0, 0, 0.9);
+
+}
+
