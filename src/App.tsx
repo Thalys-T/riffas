@@ -1,25 +1,13 @@
-
-interface ButtonProps {
-  tittle: string;
-}
-
-function Button(props: ButtonProps) {
-  return (
-    <button>
-        {props.tittle}
-    </button>
-  )
-}
-  
-
+import Button from '../src/components/Button'
+import './global.scss';
 
 function App(){
   return (
     <div>
-      <Button tittle="Button 1"/>
-      <Button tittle="Button 2"/>
-      <Button tittle="Button 3"/>
-      <Button tittle="Button 4"/>
+      <Button tittle='Botão 1'/>
+      <Button tittle='Botão 2'/>
+      <Button tittle='Botão 3'/>
+      <Button tittle='Botão 4'/>
     </div>
   )
 }
