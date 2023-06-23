@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import Button from '../src/components/Button'
 import './global.scss';
-
+import NumberButtonComponent from './components/NumberButtonComp';
 
 
 function App(){
@@ -21,11 +21,7 @@ function App(){
         </div>
       </div>
       <div id="numbers-catalog">
-        <Button tittle='Número 1'/>
-        <Button tittle='Número 2'/>
-        <Button tittle='Número 3'/>
-        <Button tittle='Número 4'/>
-        <Button tittle='Número 5'/>
+        <NumberButtonComponent/>
       </div>
     </div>
   )
