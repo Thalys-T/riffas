@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const NumberButtonComponent: React.FC = () => {
   const [showInput, setShowInput] = useState(false);
-  const [totalNumbers, setTotalNumbers] = useState(0);
+  const [totalNumbers, setTotalNumbers] = useState(99);
 
   const handleButtonClick = () => {
     setShowInput(true);
@@ -19,13 +19,9 @@ const NumberButtonComponent: React.FC = () => {
   };
 
   const renderNumberButtons = () => {
-    const buttons = [];
-    for (let i = 1; i <= totalNumbers; i++) {
-      buttons.push(
-        <button key={i}>{i}</button>
-      );
-    }
-    return buttons;
+    return Array.from({ length: totalNumbers }).map((_, index) => (
+      <button key={index + 1}>{index + 1}</button>
+    ));
   };
 
   return (

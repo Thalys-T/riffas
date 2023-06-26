@@ -1,5 +1,3 @@
-import { Component } from 'react';
-import Button from '../src/components/Button'
 import './global.scss';
 import NumberButtonComponent from './components/NumberButtonComp';
 
