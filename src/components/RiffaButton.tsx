@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import './RiffaButton.scss';
 
-const NumberButtonComponent: React.FC = () => {
+
+const RiffaButton: React.FC = () => {
   const [showInput, setShowInput] = useState(false);
   const [totalNumbers, setTotalNumbers] = useState(99);
 
@@ -25,7 +27,7 @@ const NumberButtonComponent: React.FC = () => {
   };
 
   return (
-    <div>
+    <>
       {!showInput && (
         <button onClick={handleButtonClick}>Adicionar Números</button>
       )}
@@ -33,7 +35,7 @@ const NumberButtonComponent: React.FC = () => {
       {showInput && (
         <form onSubmit={handleFormSubmit}>
           <label>
-            Total de Números:
+            Escolher o tamanho da Rifa:
             <input
               type="number"
               value={totalNumbers}
@@ -46,8 +48,8 @@ const NumberButtonComponent: React.FC = () => {
       )}
 
       {totalNumbers > 0 && renderNumberButtons()}
-    </div>
+    </>
   );
 };
 
-export default NumberButtonComponent;
+export default RiffaButton;

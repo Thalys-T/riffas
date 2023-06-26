@@ -9,9 +9,9 @@
 }
 
 body {
-  background-color: black;
+  background-color: #f1faee;
   font-size: 1.6rem;
-  color: white;
+  color: #1d3557;
 }
 
 .rifa-primary-content {
@@ -46,7 +46,7 @@ body {
 #selected-numbers {
   width: 2rem;
   height: 1.5rem;
-  background-color: rgba(255, 0, 0, 0.9);
+  background-color: #e63946;
 
   border-radius: 5px;
 
@@ -69,7 +69,8 @@ body {
 }
 
 #availables-numbers :nth-child(3){
-  background-color: rgba(255, 0, 0, 0.9);
+  background-color: #e63946;
+  ;
 
 }
 

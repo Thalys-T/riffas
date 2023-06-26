@@ -1,5 +1,5 @@
 import './global.scss';
-import NumberButtonComponent from './components/NumberButtonComp';
+import RiffaButton from './components/RiffaButton';
 
 
 function App(){
@@ -18,8 +18,8 @@ function App(){
           </div>
         </div>
       </div>
-      <div id="numbers-catalog">
-        <NumberButtonComponent/>
+      <div id="numbers-catalog" className="number-button">
+        <RiffaButton />
       </div>
     </div>
   )
