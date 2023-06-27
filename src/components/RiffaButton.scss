@@ -1,6 +1,5 @@
 .number-button button{
   text-align: center;
-  flex: none;
   width: 6rem;
   height: 3.6rem;
   background-color: #a8dadc;
@@ -10,6 +9,18 @@
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
 
-  
+.button-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "l1 l1 l1 l1 l1 l1 l1 l1 l1 l1 l1";
+  justify-content: center;
+  gap: 1rem;
+}
+
+#add-number-button {
+  margin-right: 11.6%;
+  width: 15rem;
+  height: 6.5rem;
 }

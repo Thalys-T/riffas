@@ -28,26 +28,28 @@ const RiffaButton: React.FC = () => {
 
   return (
     <>
+      <div className="button-wrapper">
+
+        {showInput && (
+          <form onSubmit={handleFormSubmit}>
+            <label>
+              Escolher o tamanho da Rifa:
+              <input
+                type="number"
+                value={totalNumbers}
+                onChange={handleInputChange}
+                min="1"
+              />
+            </label>
+            <button type="submit">Confirmar</button>
+          </form>
+        )}
+
+        {totalNumbers > 0 && renderNumberButtons()}
+      </div>
       {!showInput && (
-        <button onClick={handleButtonClick}>Adicionar Números</button>
+        <button id="add-number-button" onClick={handleButtonClick}>Adicionar Números</button>
       )}
-
-      {showInput && (
-        <form onSubmit={handleFormSubmit}>
-          <label>
-            Escolher o tamanho da Rifa:
-            <input
-              type="number"
-              value={totalNumbers}
-              onChange={handleInputChange}
-              min="1"
-            />
-          </label>
-          <button type="submit">Confirmar</button>
-        </form>
-      )}
-
-      {totalNumbers > 0 && renderNumberButtons()}
     </>
   );
 };

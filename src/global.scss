@@ -9,54 +9,105 @@
 }
 
 body {
-  background-color: #f1faee;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
-  color: #1d3557;
+  color: white;
+}
+
+div#page {
+  width: 100%;
+  background-color: #f1faee;
+}
+
+div#page::before {
+  content: '';
+  width: 100%;
+  height: 40%;
+  background: #1d3557;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+div#page header {
+  width: 124rem;
+  height: 20rem;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #f1faee;
+  position: relative;
 }
 
 .rifa-primary-content {
-  width: 60%;
+  width: 124rem;
   margin: 0 auto;
-  padding: 1.5rem;
 
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+
+  background: #457b9d;
+  border-radius: 2rem 2rem 0 0;
+  position: relative;
+  padding: 2.5rem 0 2.5rem;
+}
+
+#rifa-header-and-catalog {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 2rem 2rem 0 0;
+  // background-color: #a8dadc;
+  border: solid 1px #a8dadc;
 }
 
 #rifa-header {
+  $color: #a8dadc;
+  $alpha: 0.8;
+  height: 8rem;
+  width: 100%;
   display: flex;
-  height: 5rem;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20%;
+  
+  border-bottom: 2px solid white;
+  background-color: rgba($color, $alpha);
+  border-radius: 2rem 2rem 0 0;
 }
 
 #header-description {
   display: flex;
-  width: 50%;
+  gap: 1.5rem;
+  min-width: 24rem;
 }
 
 .number-status {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: flex-end;
+  gap: 4px;
 }
 
 #selected-numbers {
   width: 2rem;
   height: 1.5rem;
-  background-color: #e63946;
+  background-color: #ee2a3a;
 
   border-radius: 5px;
-
-  flex: none;
 }
 
 #non-selected-numbers {
   width: 2rem;
   height: 1.5rem;
-  background-color: #63A355;
+  background-color: #67eb86;
 
   border-radius: 5px;
   flex: none;
@@ -64,13 +115,13 @@ body {
 
 #numbers-catalog {
   display: flex;
-  gap: 1.5rem;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
   width: 100%;
+  margin: 0 auto;
+
+  padding-bottom: 2.5rem;
 }
 
-#availables-numbers :nth-child(3){
-  background-color: #e63946;
-  ;
-
-}
 
