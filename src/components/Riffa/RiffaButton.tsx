@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './RiffaButton.scss';
-
+import ExampleModal from '../ModalTest/modalteste';
 
 const RiffaButton: React.FC = () => {
   const [showInput, setShowInput] = useState(false);
