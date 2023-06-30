@@ -50,6 +50,7 @@ const RiffaButton: React.FC = () => {
       {!showInput && (
         <button id="add-number-button" onClick={handleButtonClick}>Adicionar Números</button>
       )}
+     
     </>
   );
 };
