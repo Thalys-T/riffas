@@ -1,6 +1,7 @@
 import './global.scss';
 import RiffaButton from './components/Riffa/RiffaButton';
 import RiffaProduct from './components/RiffaProduct/RiffaProduct';
+import ExampleModal from './components/ModalTest/modalteste';
 
 
 function App() {
@@ -27,7 +28,6 @@ function App() {
           </div>
           <div id="numbers-catalog" className="number-button">
             <RiffaButton />
-            
           </div>
         </div>
       </div>

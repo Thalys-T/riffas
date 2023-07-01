@@ -6,9 +6,9 @@ const ExampleModal = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   return (
-    <div>
+    <>
       
-      <button onClick={() => setModalIsOpen(true)}>Open Modal</button>
+      {/* <button onClick={() => setModalIsOpen(true)}>Open Modal</button> */}
 
       <Modal
         isOpen={modalIsOpen}
@@ -25,7 +25,7 @@ const ExampleModal = () => {
         </button>
       </Modal>
       
-    </div>
+    </>
   );
   console.log('clicou');
 };
